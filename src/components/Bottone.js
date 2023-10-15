@@ -5,12 +5,19 @@ const buttonStyle = {
   color : 'white',
   padding : '1.2rem',
   fontSize : '1.2rem',
-  margin : '10% 30%'
+  border : '3px solid black'
 }
+
+
 
 function Bottone() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  function changeBackground() {
+    const buttonOverMode = document.getElementsByClassName("button-over-mode");
+    buttonOverMode.style.backgroundColor = 'white';
+    buttonOverMode.style.color = 'green';
+  }
 
   const change = () => {
     setIsDarkMode(!isDarkMode);
@@ -25,7 +32,7 @@ function Bottone() {
 
   return (
     <div>
-      <button onClick={change} style={buttonStyle}>
+      <button className="button-over-mode" onClick={change} style={buttonStyle}>
         Change Light Mode
       </button>
     </div>
@@ -33,4 +40,5 @@ function Bottone() {
 }
 
 export default Bottone;
+
 
