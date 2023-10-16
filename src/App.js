@@ -32,8 +32,6 @@ function App() {
   return (
     <div> 
       <Bottone />
-      <Guess />
-      <FruitButton />
       <Link to = "/" className = 'nav-item' style = { styling }>Homepage</Link>
       <br></br>
       <Link to = "/about-me" className = 'nav-item' style = { styling }>About Me</Link>
@@ -43,6 +41,11 @@ function App() {
         <Route exact path='/about-me' element = { <AboutMe /> }></Route>
 
       </Routes>
+
+      <Guess />
+      <FruitButton />
+      
+      
       
     </div>
     
