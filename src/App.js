@@ -18,13 +18,25 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
- 
+  const styling = {
+    display : 'flex',
+    flowDirection : 'row',
+    justifyContent : 'center',
+    alignItems : 'center',
+    position : 'absolut',
+    top : '0',
+    right : '0',
+    fontSize : '2.5rem'
+  }
+
   return (
     <div> 
       <Bottone />
       <Guess />
       <FruitButton />
-      
+      <Link to = "/" className = 'nav-item' style = { styling }>Homepage</Link>
+      <br></br>
+      <Link to = "/about-me" className = 'nav-item' style = { styling }>About Me</Link>
       <Routes>
 
         <Route exact path='/' element = { <Homepage /> }></Route>
