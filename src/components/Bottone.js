@@ -1,12 +1,7 @@
 import React, { useState } from "react";
+import './Bottone.css';
 
-const buttonStyle = {
-  backgroundColor : 'green',
-  color : 'white',
-  padding : '1.2rem',
-  fontSize : '1.2rem',
-  border : '3px solid black'
-}
+
 
 
 
@@ -32,7 +27,7 @@ function Bottone() {
 
   return (
     <div>
-      <button className="button-over-mode" onClick={change} style={buttonStyle}>
+      <button className="button-over-mode" onClick={change}>
         Change Light Mode
       </button>
     </div>
