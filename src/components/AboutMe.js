@@ -1,6 +1,12 @@
+import Guess from "./Guess";
+
 function AboutMe() {
   return(
-    <h1>About Me</h1>
+    <div>
+      <h1>About Me</h1>
+      <Guess />
+    </div>
+
   );
 }
 
