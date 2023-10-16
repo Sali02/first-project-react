@@ -10,9 +10,9 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 /*
-<Bottone />
-      <Guess />
-      <FruitButton />
+    <Bottone />
+    <Guess />
+    <FruitButton />
 */
 
 
@@ -21,12 +21,14 @@ function App() {
  
   return (
     <div> 
-      
+      <Bottone />
+      <Guess />
+      <FruitButton />
       
       <Routes>
 
-        <Route exact path='/' element = { Homepage }></Route>
-        <Route exact path='/about-me' element = { AboutMe }></Route>
+        <Route exact path='/' element = { <Homepage /> }></Route>
+        <Route exact path='/about-me' element = { <AboutMe /> }></Route>
 
       </Routes>
       
